@@ -1,5 +1,5 @@
 <?php
-$host = 'bfc63qjcojiyzmdsjyqv-mysql.services.clever-cloud.com';
+$host = 'bfc63qjcojiyzmdsjyqv-mysql.services.clever-cloud.com:3306';
 $db = 'bfc63qjcojiyzmdsjyqv';
 $user = 'uyyssop40cx5od7x';
 $pass = 'ckFtNYrdqA9tKbzjZNmu';
