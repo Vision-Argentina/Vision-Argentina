@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
         <h1>Visión Argentina</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
                 <li><a href="noticias.php">Noticias</a></li>
                 <li><a href="logout.php">Cerrar Sesión</a></li>
             </ul>
