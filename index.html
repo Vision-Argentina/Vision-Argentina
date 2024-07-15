@@ -20,7 +20,17 @@
     <main>
         <section id="noticias">
             <h2>Últimas Noticias</h2>
-            <?php include 'noticias.php'; ?>
+            <?php
+            include 'db.php';
+            $result = $conn->query('SELECT * FROM news ORDER BY created_at DESC');
+            while ($row = $result->fetch_assoc()) {
+                echo '<article>';
+                echo '<h3>' . htmlspecialchars($row['title']) . '</h3>';
+                echo '<p>' . nl2br(htmlspecialchars($row['content'])) . '</p>';
+                echo '<p>' . htmlspecialchars($row['created_at']) . '</p>';
+                echo '</article>';
+            }
+            ?>
         </section>
     </main>
     <footer>
